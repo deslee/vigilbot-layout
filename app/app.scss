@@ -1,0 +1,199 @@
+@import '_variables';
+@import '../node_modules/foundation/scss/foundation';
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #eee;
+	height: 100%;
+}
+
+.layout {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	.stretch {
+		flex-grow: 1;
+	}
+
+	> {
+		flex-grow: 0;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+.layout > header {
+	background: $dark2;
+	h1 {
+		color: $light-orange;
+		letter-spacing: 1rem;
+		text-align: center;
+		border: 1px solid $dark3;
+		margin: 1rem 0;
+	}
+
+}
+
+
+.site-nav {
+	.row {
+		display: flex;
+	}
+	background-color: $dark2;
+
+	font-size: 1rem;
+	line-height: 1rem;
+	a {
+		color: white;
+		font-family: $default-sans-font;
+		font-weight: normal;
+	}
+
+	.title {
+		display: none;
+		font-size: inherit;
+		padding: 1rem 4.5rem;
+		background: $orange;
+	}
+
+	.navigation {
+		display: flex;
+		flex-grow: 1;
+		margin: 0;
+		padding: 0;
+		a {
+			padding: 1rem;
+			flex-grow: 1;
+			text-align: center;
+			list-style-type: none;
+			&:hover {
+				background: $dark3;
+			}
+			&.active {
+				background: $dark3;
+			}
+		}
+	}
+}
+
+.sect-block {
+	padding: $sect-vertical-padding $sect-horizontal-padding;
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	&.feature-description {
+		h1 {
+			font-size: 3rem;
+		}
+		background: $dark3;
+	}
+	&.reaction-name {
+		background: $dark2;
+	}
+
+	&.main-block {
+		background: white;
+	}
+
+}
+
+.button.active {
+	background: $secondary-color;
+}
+
+.button-group {
+	display: flex;
+	.button {
+		flex-grow: 1;
+		font-weight: normal;
+		border: none;
+	}
+	margin-bottom: .5rem;
+}
+
+.feature-description, .reaction-name {
+	h1, h2, h3, h4, h5, h6 {
+		color: white;
+	}
+	.description {
+		color: $light-orange;
+		font-family: $default-sans-font;
+	}
+
+	color: white;
+}
+
+
+.mini-section {
+	padding-top: 2rem;
+}
+
+select {
+	height: emCalc(13px) + ($form-spacing * 1.5);
+}
+
+
+.match-preview {
+	display: flex;
+
+	> * {
+		flex-grow: 1;
+		padding-right: 1rem;
+		textarea {
+		}
+	}
+
+}
+
+
+footer {
+	.row {
+		display: flex;
+		flex-grow: 1;
+	}
+	padding: 4em 2em;
+	background: $dark3;
+	display: flex;
+	&, a {
+		color: $light-orange;
+	}
+	a {
+		text-decoration: underline
+	}
+
+	.footer-section {
+		flex-grow: 1;
+
+		&:nth-child(2) {
+			text-align: right;
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			&:before {
+				content: "| ";
+				padding: 0 .5rem;
+			}
+			&:first-child {
+				&:before {
+					content: '';
+					padding: 0;
+				}
+			}
+		}
+	}
+}

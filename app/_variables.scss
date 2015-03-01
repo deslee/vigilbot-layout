@@ -1,0 +1,31 @@
+$default-sans-font: Arial, sans;
+
+$dark1: #A1A194;
+$dark2: #5b605f;
+$dark3: #464646;
+$orange: #ff6600;
+$light-orange: rgb(208, 209, 190);
+
+$header-font-family: 'Droid Serif', serif;
+$body-font-family: $default-sans-font; 
+$topbar-bg: rgba(0,0,0,0);
+$topbar-link-bg-active: $dark3;
+$topbar-link-weight: normal;
+$topbar-link-font-size: 1em;
+$header-top-margin: 0;
+$header-bottom-margin: 0;
+$topbar-margin-bottom: 0;
+$topbar-dropdown-bg: $dark2;
+
+
+$sect-vertical-padding: 2em;
+$sect-horizontal-padding: 2em;
+
+
+$input-font-family: $default-sans-font;
+
+$primary-color: $dark1;
+$secondary-color: $dark2;
+$alert-color: $orange;
+$success-color: #5da423;
+

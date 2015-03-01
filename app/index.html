@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="app.css" />
+	</head>
+
+	<body>
+		<div class="layout">
+			<header>
+				<div class="row">
+					<h1>VigilBot</h1>
+				</div>
+			</header>
+			<nav class="site-nav" role="navigation">
+				<div class="row">
+
+				<h1 class="title"><a href="#">VigilBot</a></h1>
+
+				<div class="navigation">
+					<a class="active" href="#">Reactions</a>
+					<a href="#">Logs</a>
+				</div>
+				</div>
+			</nav>
+
+			<section class="sect-block feature-description">
+				<div class="row">
+				<header>
+					<h1>Reactions</h1>
+					<span class="description">Vigilbot can apply this Reaction to all users, or only specific users in your channel</span>
+				</header>
+			</div>
+			</section>
+
+			<section class="sect-block reaction-name">
+				<div class="row">
+				<h2>What is the name of this Reaction?</h2>
+				<div class="row collapse">
+					<div class="small-10 columns">
+						<input type="text" placeholder="Enter a name" />
+					</div>
+					<div class="small-2 columns">
+						<button class="button postfix">
+							Save
+						</button>
+					</div>
+				</div>
+			</div>
+			</section>
+
+			<section class="sect-block main-block stretch">
+				<div class="row">
+				<div class="button-group">
+					<button class="button active">
+						Sensitivity
+					</button>
+					<button class="button">
+						Availability
+					</button>
+					<button class="button">
+						Action
+					</button>
+				</div>
+				<span class="description"> 
+					Specify the text that VigilBot will detect, and specify VigilBot's sensitivity to it.
+				</span>
+
+				<div class="mini-section">
+					<h3>Enter the text to detect</h3>
+
+					<div class="row collapse">
+						<div class="small-2 columns">
+							<span class="prefix">
+								Text
+							</span>
+						</div>
+						<div class="small-10 columns">
+							<input type="text" placeholder="" />
+						</div>
+					</div>
+
+				</div>
+
+				<div class="mini-section">
+					<h3>Choose sensitivity</h3>
+
+					<div class="button-group">
+						<button class="button active">
+							Fuzzy
+						</button>
+						<button class="button">
+							Fuzzy
+						</button>
+					</div>
+					<div class="row collapse">
+						<div class="small-2 columns">
+							<span class="prefix">
+								Regex
+							</span>
+						</div>
+						<div class="small-8 columns">
+							<input type="text" placeholder="" />
+						</div>
+						<div class="small-2 columns">
+							<select>
+								<option value="two">Match 2 chars</option>
+								<option value="n">Match n chars</option>
+								<option value="custom">Custom Regex</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="mini-section">
+
+					<h3>Preview</h3>
+					<div class="match-preview">
+						<div class="preview-main">
+							<div>See what VigilBot can detect:</div>
+							<textarea></textarea>
+
+						</div>
+
+						<div class="preview-custom">
+							<div>Enter your own test case:</div>
+
+							<textarea></textarea>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			</section>
+
+			<footer class="">
+				<div class="row">
+				<ul class="footer-section">
+					<li>Github</li>
+					<li>Github</li>
+					<li>Github</li>
+					<li>Github</li>
+				</ul>	
+
+				<ul class="footer-section">
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">ToS</a></li>
+					<li>&copy; 2015 Desmond Lee</li>
+				</ul>
+			</div>
+			</footer>
+		</div>
+
+		<script src="vendor.js"></script>
+		<script src="app.js"></script>
+
+		<!-- @if isDev==true -->
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+			<!-- @endif -->
+		</body>
+	</html>
